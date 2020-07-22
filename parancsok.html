@@ -819,6 +819,24 @@ body {font-family: "Lato", sans-serif}
                                 </div>
                             </li>
                             <li>
+                                    <div class="tile is-child box">
+                                            <div class="tooltip">
+                                                    <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/serverinfo</p>
+                                                    <span class="tooltiptext" id="s/serverinfo">Másolás a vágólapra</span>
+                                                </div>
+                                        <p>Megmutatja az adott szerver információit!</p>
+                                        </div>
+                                    </li>
+                                     <li>
+                                    <div class="tile is-child box">
+                                            <div class="tooltip">
+                                                    <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/userinfo [@említés]</p>
+                                                    <span class="tooltiptext" id="s/userinfo">Másolás a vágólapra</span>
+                                                </div>
+                                        <p>Kimutatja az adott felhasználó információit!</p>
+                                        </div>
+                                    </li>
+                            <li>
                                 <div class="tile is-child box">
                                     <div class="tooltip">
                                         <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-fified-3a8368bad12713ced3fdb63e-="">s/unmute [@említés]</p>
@@ -851,7 +869,47 @@ body {font-family: "Lato", sans-serif}
                                         <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-fified-3a8368bad12713ced3fdb63e-="">s/warn [@említés] (indok)</p>
                                         <span class="tooltiptext" id="s/warn [említés] (indok)">Másolás a vágólapra</span>
                                     </div>
-                                    <p>Figyelmezteti üzenetben az adott embert! (Adminisztrátor jog szükséges)</p>
+                                    <p>Figyelmezteti üzenetben az adott embert! (Tag kirúgása jog szükséges)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tile is-child box">
+                                    <span class="w3-tag w3-red w3-round w3-right">Prémium</span>
+                                    <div class="tooltip">
+                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/giveaway [idő] [nyeremény]</p>
+                                        <span class="tooltiptext" id="s/giveaway">Másolás a vágólapra</span>
+                                    </div>
+                                    <p>Nyereményjáték készítés.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tile is-child box">
+                                    <span class="w3-tag w3-red w3-round w3-right">Prémium</span>
+                                    <div class="tooltip">
+                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/endgiveaway</p>
+                                        <span class="tooltiptext" id="s/endgiveaway">Másolás a vágólapra</span>
+                                    </div>
+                                    <p>Nyereményjáték leállítása, kisorsolja a nyertest.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tile is-child box">
+                                    <span class="w3-tag w3-red w3-round w3-right">Prémium</span>
+                                    <div class="tooltip">
+                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/greroll</p>
+                                        <span class="tooltiptext" id="s/greroll">Másolás a vágólapra</span>
+                                    </div>
+                                    <p>Nyereményjáték nyertesének újrasorsolása.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="tile is-child box">
+                                    <span class="w3-tag w3-red w3-round w3-right">Prémium</span>
+                                    <div class="tooltip">
+                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/resetalldata</p>
+                                        <span class="tooltiptext" id="s/resetalldata">Másolás a vágólapra</span>
+                                    </div>
+                                    <p>A botban megadott összes információ, pl.: Üdvözlő üzenet visszaállításra kerül.</p>
                                 </div>
                             </li>
                             <li>
@@ -1287,15 +1345,6 @@ body {font-family: "Lato", sans-serif}
                             <li>
                                 <div class="tile is-child box">
                                     <div class="tooltip">
-                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/games</p>
-                                    <span class="tooltiptext" id="s/games">Másolás a vágólapra</span>
-                                    </div>
-                                    <p>Játékok megtekintése.</p>
-                                </div>    
-                            </li>
-                            <li>
-                                <div class="tile is-child box">
-                                    <div class="tooltip">
                                         <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/memes</p>
                                     <span class="tooltiptext" id="s/memes">Másolás a vágólapra</span>
                                     </div>
@@ -1389,16 +1438,6 @@ body {font-family: "Lato", sans-serif}
                                     </div>
                                     <p>Jegyzet beállítása ( Hamarosan )</p>
                                     <p>Ár: 15 pont</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tile is-child box">
-                                    <span class="w3-tag w3-red w3-round w3-right">Prémium</span>
-                                    <div class="tooltip">
-                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/giveaway [nyeremény] [idő (Másodpercben)]</p>
-                                        <span class="tooltiptext" id="s/giveaway">Másolás a vágólapra</span>
-                                    </div>
-                                    <p>Nyereményjáték készítés.</p>
                                 </div>
                             </li>
                             <li>
@@ -1515,24 +1554,6 @@ body {font-family: "Lato", sans-serif}
                             <li>
                                 <div class="tile is-child box">
                                     <div class="tooltip">
-                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/members</p>
-                                        <span class="tooltiptext" id="s/members">Másolás a vágólapra</span>
-                                    </div>
-                                    <p>Az össszes felhasználó, ahol a bot bennt van.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tile is-child box">
-                                    <div class="tooltip">
-                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/servers</p>
-                                        <span class="tooltiptext" id="s/servers">Másolás a vágólapra</span>
-                                    </div>
-                                    <p>Az összes szerver, ahol a bot bennt van.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tile is-child box">
-                                    <div class="tooltip">
                                         <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/nitro</p>
                                         <span class="tooltiptext" id="s/nitro">Másolás a vágólapra</span>
                                     </div>
@@ -1597,15 +1618,6 @@ body {font-family: "Lato", sans-serif}
                             <li>
                                 <div class="tile is-child box">
                                     <div class="tooltip">
-                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/uptime</p>
-                                        <span class="tooltiptext" id="s/uptime">Másolás a vágólapra</span>
-                                    </div>
-                                    <p>Kiírja, mióta van fennt a bot.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="tile is-child box">
-                                    <div class="tooltip">
                                         <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/ping</p>
                                         <span class="tooltiptext" id="s/ping">Másolás a vágólapra</span>
                                     </div>
@@ -1639,15 +1651,6 @@ body {font-family: "Lato", sans-serif}
                                     <p>Hamis hackelés egy adott felhassználón.</p>
                                 </div>
                             </li>
-                            <li>
-                                <div class="tile is-child box">
-                                    <div class="tooltip">
-                                        <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/author</p>
-                                        <span class="tooltiptext" id="s/author">Másolás a vágólapra</span>
-                                    </div>
-                                    <p>Kiírja a bot készítőjét (Dimitry#8230) és információkat róla.</p>
-                                </div>
-                            </li>
                             </div>
                         </div>
                     </div>
@@ -1669,7 +1672,7 @@ body {font-family: "Lato", sans-serif}
                                         <p class="subtitle" onclick="if (!window.__cfRLUnblockHandlers) return false; copy(this)" onmouseout="if (!window.__cfRLUnblockHandlers) return false; outFunc(this)" data-cf-modified-3a8368bad12713ced3fdb63e-="">s/setup temp2</p>
                                         <span class="tooltiptext" id="s/setup temp2">Másolás a vágólapra</span>
                                     </div>
-                                    <p>Szerver készítő template. ( Hamarosan )</p>
+                                    <p>Szerver készítő template 2.</p>
                                 </div>
                             </li>
                             <li>
