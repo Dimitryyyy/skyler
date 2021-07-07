@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../assets/favicon.png">
+    <title>Skyler - Parancsok</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="/">
+                <img src="../assets/bot.png" alt="" width="50" height="50" class="rounded-circle"> &nbsp;
+                <span>Skyler</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#/">Parancsok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./team">Vezetőség</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Links
+                        </a>
+                        <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/oauth2/authorize?client_id=629368281513328642&permissions=8&scope=bot" target="_blank">Meghívás</a>
+                            </li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/invite/JfRbAU7" target="_blank">Support
+                                    Server</a></li>
+                            <li><a class="dropdown-item text-muted font-weight-bold" href="./faq">FAQ</a></li>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex ml-auto" id="headerlogin">
+                    <li class="nav-item" style="list-style: none;">
+                        <a class="nav-link btn btn-outline-secondary login" href="/login">Bejelentkezés</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div class="jumbotron text-center bg-transparent">
+        <h1 class="commandstitle">Parancsok</h1>
+        <p class="lead commandssub">Az összes parancsot megtalálod ezen az oldalon!</p>
+        <hr>
+        <input id="myInput" type="text" class="searchbox" placeholder="Search">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="border"></div>
+        <br>
+        <br>
+        <br>
+        <div id="myCmd">
+            <br>
+            <button type="button" class="collapsible">help<span> - Parancslista megtekintése.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(169, 247, 247);">Szükséges jog:</h4>
+                <p style="color: rgb(252, 51, 69);">Adminisztrátor</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/help</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/balance<span> - Egyenleg megtekintése</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/balance [@említés]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/crime<span> - Véletlenszerű bolt kirablása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs.</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/crime</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/work<span> - Dolgozás.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/work</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/pay<span> - Átutalás bankon keresztül.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/pay [@említés] [összeg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/setcurrency<span> - Pénznem beállítása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(252, 51, 69);">Adminisztrátor</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/setcurrency [emoji/szöveg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/resetcurrency<span> - Pénznem visszaállítása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(252, 51, 69);">Adminisztrátor</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/resetcurrency</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/farm<span> - Dolgozás a farmon.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/farm</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/inventory<span> - Megvásárolt tárgyak listája.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/inventory</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/buyitem<span> - Tárgy megvásárlása a boltból.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/buyitem[szám]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/deposit<span> - Pénz bankba rakása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/deposit [összeg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/withdraw<span> - Pénz kivétele a bankból.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/withdraw [összeg]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/rob<span> - Felhasználó kirablása.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/rob [@említés]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/additem<span> - Tárgy hozzáadása a bolthoz.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/additem [név] [ár] [@rang]</p>
+            </div>
+            <br>
+            <br>
+            <button type="button" class="collapsible">s/removeitem<span> - Tárgy törlése a boltból.</span></button>
+            <div class="content">
+                <h4 style="color: rgb(253, 248, 248);">Szükséges jog:</h4>
+                <p style="color: rgb(116, 67, 253);">Nincs</p>
+                <h4 style="color: #cccccc;">Használat:</h4>
+                <p>s/removeitem[szám]</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="mastfoot mb-auto">
+      <div class="container-fluid mb-auto">
+        <div class="row d-flex justify-content-center">
+          <div class="">
+            <p style="font-size: 19px; padding: 0px; margin: 0px;"><a href="https://github.com/Hadi-Koubeissi"
+                style="text-decoration: none; color: white;">Made with 💖 by Skyler Dev Team</a></br>Skyler - ©
+              2021. Minden jog fenntarva.</br>[<a href="./license"><b>License</b></a>]</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
