@@ -22,4 +22,4 @@ $redirect_url = "https://skylerbot.ml/";
 # - Leave it as it is if you do not want to use 'guilds.join' scope.
 
 # https://i.imgur.com/2tlOI4t.png (screenshot)
-$bot_token = NjI5MzY4MjgxNTEzMzI4NjQy.XZYu4w.jJljtI4E-MuucgBxsihGuf6nbVY;
+$bot_token = null;
