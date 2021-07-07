@@ -35,7 +35,7 @@ get_user($email = True);
 #get_user($email=True);
 
 # Adding user to guild | (guilds.join scope)
-# join_guild('SERVER_ID_HERE');
+# join_guild('632173472637779968');
 
 # Fetching user guild details | (guilds scope)
 $_SESSION['guilds'] = get_guilds();
