@@ -13,7 +13,7 @@
 			if (isset($_SESSION['user'])) {
 				echo '<a href="includes/logout.php"><button class="log-in">LOGOUT</button></a>';
 			} else {
-				echo "<a href='$auth_url'><button class='log-in'>LOGIN</button></a>";
+				echo "<a href='https://discord.com/api/oauth2/authorize?client_id=629368281513328642&redirect_uri=https%3A%2F%2Fdiscord.com%2Foauth2%2Fauthorize%3Fclient_id%3D629368281513328642%26scope%3Dbot%26permissions%3D1007156351&response_type=code&scope=guilds%20identify%20guilds.join'><button class='log-in'>LOGIN</button></a>";
 			}
 			?>
 		</span>
