@@ -84,6 +84,14 @@
 								<li><a href="https://discord.com/invite/JfRbAU7">Support Server</a></li>
 								<li><a href="https://discord.com/oauth2/authorize?client_id=629368281513328642&permissions=8&scope=bot">Meghívás</a></li>
 								<li><a href="/kapcsolat">Kapcsolat</a></li>
+			<?php
+			$auth_url = url($client_id, $redirect_url, $scopes);
+			if (isset($_SESSION['user'])) {
+				echo '<a href="includes/logout.php"><button class="log-in">LOGOUT</button></a>';
+			} else {
+				echo "<a href='$auth_url'><button class='log-in'>LOGIN</button></a>";
+			}
+			?>
 							</ul>
 						</div>
 					</div>
